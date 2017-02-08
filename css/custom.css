@@ -1,0 +1,13 @@
+.carousel-element {
+  width: 100%;
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#head1 { background-image: url('../img/hero1.jpg'); }
+#head2 { background-image: url('../img/hero2.jpg'); }
+#head3 { background-image: url('../img/hero3.jpg'); }
+#head4 { background-image: url('../img/hero4.jpg'); }
