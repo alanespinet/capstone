@@ -13,52 +13,119 @@
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="vendor/animate/animate.min.css" />
 
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700" rel="stylesheet">
+
   <!-- OWN STYLES -->
   <link rel="stylesheet" href="css/custom.css" />
 </head>
 <body>
 
-  <div id="viewport">
-    <div id="screens-wrapper">
+  <div id="mobile-overflow-wrapper">
+    <div id="viewport">
 
-      <!-- #header -->
-      <div id="header" class="one-screen">
-        <div id="carousel-wrapper">
-          <div id="carousel">
-            <div id="head1" class="carousel-element"></div>
-            <div id="head2" class="carousel-element"></div>
-            <div id="head3" class="carousel-element"></div>
-            <div id="head4" class="carousel-element"></div>
-          </div>
-        </div>
-      </div><!-- /#header -->
+      <div id="screens-wrapper">
+
+        <!-- #header -->
+        <div id="header" class="one-screen">
+
+          <!-- MENU -->
+          <div id="header-menu">
+            <nav class="navbar navbar-fixed-top dark">
+              <div class="container-fluid">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-header-menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="nav-header-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" id="menu-home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="#" id="menu-skills"><i class="fa fa-star" aria-hidden="true"></i>Skills</a></li>
+                        <li><a href="#" id="menu-work"><i class="fa fa-briefcase" aria-hidden="true"></i>Work</a></li>
+                        <li><a href="#" id="menu-about"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>
+                        <li><a href="#" id="menu-contact"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+          </div><!-- /#header-menu -->
+          <!-- /MENU -->
 
 
-      <!-- #skills -->
-      <div id="skills" class="one-screen"></div><!-- /#skills -->
+          <!-- HOME -->
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-8 col-md-offset-2 text-center" id="headlines">
+                <h1>Alan Espinet</h1>
+                <h4>Official Page</h4>
+              </div>
+
+              <div class="col-xs-12 col-md-6 hidden-xs hidden-sm main-photo">
+                <img src="img/alan.jpeg" alt="" id="my-main-hoto">
+                <div id="header-contacts">
+                  <h3 class="gmail"><i class="fa fa-envelope"></i>aelluvetaa@gmail.com</h3>
+                  <h3 class="linkedin"><i class="fa fa-linkedin-square"></i>https://www.linkedin.com/in/alan-espinet</h3>
+                  <h3 class="youtube"><i class="fa fa-youtube-square"></i>https://www.linkedin.com/in/alan-espinet</h3>
+                  <h3 class="phone"><i class="fa fa-phone-square"></i> +1 (786) 622 - 5314 </h3>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-6" id="main-description">
+                <h3>Hi there!</h3>
+                <p>My name is Alan Espinet, <strong>Developer</strong> at your service. Please be welcome to my personal page. You are totally free to go anywhere and explore my skill list, recent works, personal information and (if you like what you see) contact me.</p>
+                <div class="code-example">
+                  <p><span class="reserved">cout</span> << <span class="code-text">"hello... world???"</span> << <span class="reserved">endl</span>;</p>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+          <!-- /HOME -->
+
+        </div><!-- /#header -->
 
 
-      <!-- #work -->
-      <div id="work" class="one-screen"></div><!-- /#work -->
+        <!-- #skills -->
+        <div id="skills" class="one-screen">
+          <h1 class="white-title">Skills</h1>
+        </div><!-- /#skills -->
 
 
-      <!-- #about -->
-      <div id="about" class="one-screen"></div><!-- /#about -->
+        <!-- #work -->
+        <div id="work" class="one-screen">
+          <h1>Work</h1>
+        </div><!-- /#work -->
 
 
-      <!-- #contact -->
-      <div id="contact" class="one-screen"></div><!-- /#contact -->
+        <!-- #about -->
+        <div id="about" class="one-screen">
+          <h1 class="white-title">About me</h1>
+        </div><!-- /#about -->
 
-    </div><!-- /#screens-wrapper -->
-  </div><!-- /#viewport -->
 
+        <!-- #contact -->
+        <div id="contact" class="one-screen">
+          <h1>Contact</h1>
+        </div><!-- /#contact -->
 
+      </div><!-- /#screens-wrapper -->
+    </div><!-- /#viewport -->
+  </div><!-- /#mobile-overflow-wrapper -->
 
   <!-- VENDOR JAVASCRIPT -->
   <script src="vendor/jquery/jquery.min.js" charset="utf-8"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
   <script src="vendor/gsap/TweenMax.min.js" charset="utf-8"></script>
   <script src="vendor/wow/wow.js" charset="utf-8"></script>
+  <script src="vendor/gsap/TweenMax.min.js" charset="utf-8"></script>
 
   <!-- OWN JAVASCRIPT -->
   <script src="js/custom-behavior.js" charset="utf-8"></script>

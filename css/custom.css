@@ -1,13 +1,232 @@
-.carousel-element {
-  width: 100%;
-  height: 100vh;
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/leaguegothic-regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/leaguegothic-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/leaguegothic-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/leaguegothic-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
+@font-face {
+  font-family: 'Wire One';
+  src: url('../fonts/WireOne.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/WireOne.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/WireOne.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/WireOne.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/WireOne.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/WireOne.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  padding-bottom: .5rem !important;
+}
+
+html {
+  font-size: 16px;
+}
+
+#header {
+  padding-left: 0;
+  padding-right: 0;
+
+  background-image: url('../img/back.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-#head1 { background-image: url('../img/hero1.jpg'); }
-#head2 { background-image: url('../img/hero2.jpg'); }
-#head3 { background-image: url('../img/hero3.jpg'); }
-#head4 { background-image: url('../img/hero4.jpg'); }
+.one-screen {
+  width: 100%;
+  height: 100vh;
+}
+
+#screens-wrapper {
+  position: relative;
+  top: 0;
+  transition: top .3s ease-out;
+}
+
+#header, #work, #contact  {
+  background-color: white;
+}
+
+#skills, #about  {
+  background-color: black;
+}
+
+#nav-header-menu i {
+  padding-right: .4rem;
+}
+
+#header-menu nav a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#header-menu nav.dark {
+  background: black;
+}
+
+#header-menu nav.dark a {
+  color: white;
+  transition: all .3s ease;
+}
+
+#header-menu nav.dark a:hover {
+  background-color: black;
+  color: gold;
+}
+
+#header-menu nav.dark a:focus {
+  background-color: black;
+}
+
+#header-menu nav.light {
+  background: white;
+}
+
+#header-menu nav.light a {
+  color: black;
+  transition: all .3s ease;
+}
+
+#header-menu nav.light a:hover {
+  background-color: white;
+  color: gold;
+}
+
+#header-menu nav.light a:focus {
+  background-color: white;
+}
+
+#headlines {
+  margin-top: 4rem;
+  font-family: 'League Gothic', arial, sans-serif;
+  border-bottom: 1px solid silver;
+}
+
+#headlines h1 {
+  font-size: 5rem;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+#headlines h4 {
+  font-size: 2rem;
+  color: gray;
+}
+
+nav.dark .icon-bar {
+  background-color: white !important;
+}
+
+nav.light .icon-bar {
+  background-color: black !important;
+}
+
+.main-photo {
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#my-main-hoto {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  z-index: 10;
+  position: absolute;
+}
+
+#my-main-hoto:hover {
+  cursor: pointer;
+}
+
+body,
+#mobile-overflow-wrapper {
+  overflow: hidden;
+}
+
+#main-description {
+  font-family: 'Wire One', sans-serif;
+}
+
+#main-description h3 {
+  font-size: 48px;
+}
+
+#main-description p {
+  font-size: 28px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+.code-example {
+  margin-top: 40px;
+}
+
+.reserved {
+  color: blue;
+}
+
+.reserved,
+.code-text {
+  font-weight: 600;
+}
+
+#header-contacts {
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+
+#header-contacts h3 {
+  font-size: 16px;
+  color: #999;
+  transition: color .2s ease;
+  opacity: 0;
+}
+
+
+#header-contacts h3:hover {
+  cursor: pointer;
+}
+
+#header-contacts h3.gmail:hover {
+  color: #C63D2D;
+}
+
+#header-contacts h3.linkedin:hover {
+  color: #4875B4;
+}
+
+#header-contacts h3.youtube:hover {
+  color: #FF3333;
+}
+
+#header-contacts h3.phone:hover {
+  color: teal;
+}
+
+#header-contacts i {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'League Gothic', arial, sans-serif;
+  font-size: 5rem;
+  margin: 0;
+  padding-top: 3rem;
+}
+
+.white-title {
+  color: white;
+}
