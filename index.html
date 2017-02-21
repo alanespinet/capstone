@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-theme.min.css" />
   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="vendor/animate/animate.min.css" />
+  <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css" />
 
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700" rel="stylesheet">
@@ -47,11 +48,11 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="nav-header-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" id="menu-home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                        <li><a href="#" id="menu-skills"><i class="fa fa-star" aria-hidden="true"></i>Skills</a></li>
-                        <li><a href="#" id="menu-work"><i class="fa fa-briefcase" aria-hidden="true"></i>Work</a></li>
-                        <li><a href="#" id="menu-about"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>
-                        <li><a href="#" id="menu-contact"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
+                        <li><a href="#" class="menu-item menu-active-item" id="menu-home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="#" class="menu-item" id="menu-skills"><i class="fa fa-star" aria-hidden="true"></i>Skills</a></li>
+                        <li><a href="#" class="menu-item" id="menu-work"><i class="fa fa-briefcase" aria-hidden="true"></i>Work</a></li>
+                        <li><a href="#" class="menu-item" id="menu-about"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>
+                        <li><a href="#" class="menu-item" id="menu-contact"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -96,24 +97,83 @@
         <!-- #skills -->
         <div id="skills" class="one-screen">
           <h1 class="white-title">Skills</h1>
+          <hr class="white-line animated-line">
+
+          <!-- Two or One carousel views -->
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="owl-carousel">
+
+                  <div class="text-left">
+                    <h1 class="skills-header">General and OO Programming</h1>
+                    <ul id="general-skills" class="skill-list">
+                      <li>C/C++</li>
+                      <li>Java</li>
+                      <li>C# and .NET</li>
+                      <li>VB</li>
+                      <li>DB with SQL Server</li>
+                    </ul>
+                  </div>
+
+                  <div class="text-left">
+                    <h1 class="skills-header">Front End Develpment</h1>
+                    <ul id="frontend-skills" class="skill-list">
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>JavaScript</li>
+                      <li>jQuery</li>
+                      <li>AngularJS</li>
+                      <li>Bootstrap</li>
+                      <li>Materialize</li>
+                      <li>Responsive Design</li>
+                    </ul>
+                  </div>
+
+                  <div class="text-left">
+                    <h1 class="skills-header">Back End Develpment</h1>
+                    <ul id="backend-skills" class="skill-list">
+                      <li>SQL</li>
+                      <li>MySQL and MariaDB</li>
+                      <li>NodeJS</li>
+                      <li>PHP</li>
+                      <li>ASP.NET and ADO.NET</li>
+                    </ul>
+                  </div>
+
+                  <div class="text-left">
+                    <h1 class="skills-header">Videogame Development</h1>
+                    <ul id="videogame-skills" class="skill-list">
+                      <li>Unity3D</li>
+                      <li>C# and JavaScript oriented to Unity3D</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div><!-- /#skills -->
 
 
         <!-- #work -->
         <div id="work" class="one-screen">
           <h1>Work</h1>
+          <hr class="black-line animated-line">
         </div><!-- /#work -->
 
 
         <!-- #about -->
         <div id="about" class="one-screen">
           <h1 class="white-title">About me</h1>
+          <hr class="white-line animated-line">
         </div><!-- /#about -->
 
 
         <!-- #contact -->
         <div id="contact" class="one-screen">
           <h1>Contact</h1>
+          <hr class="black-line animated-line">
         </div><!-- /#contact -->
 
       </div><!-- /#screens-wrapper -->
@@ -125,10 +185,11 @@
   <script src="vendor/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
   <script src="vendor/gsap/TweenMax.min.js" charset="utf-8"></script>
   <script src="vendor/wow/wow.js" charset="utf-8"></script>
-  <script src="vendor/gsap/TweenMax.min.js" charset="utf-8"></script>
+  <script src="vendor/owl-carousel/owl.carousel.min.js" charset="utf-8"></script>
 
   <!-- OWN JAVASCRIPT -->
   <script src="js/custom-behavior.js" charset="utf-8"></script>
   <script src="js/animations.js" charset="utf-8"></script>
+  <script src="js/carousel-config.js" charset="utf-8"></script>
 </body>
 </html>
